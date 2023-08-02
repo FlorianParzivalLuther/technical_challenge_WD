@@ -1,44 +1,54 @@
-# The Phone Cave (WD)
+The Phone Cave App
+The Phone Cave app is a catalog showcasing a variety of phones available at The Phone Cave store. The app consists of a REST API server built with Node.js and Express, serving data from a phones.json file, and a React frontend that communicates with the API to display the phone catalog and their details.
 
-  At The Phone Cave we are looking for someone to help us turn our cave store into a home, and to do so we present you this challenge.
+How to Use the App
+To use The Phone Cave app, follow the steps below:
 
-## The challenge (Duration: 3 hours)
+Step 1: Set up the Server
+Clone the repository to your local machine.
+Navigate to the server directory in your terminal.
+Install the required dependencies by running npm install.
+Start the server by running npm start.
+The server will be running on http://localhost:5000.
+Step 2: Set up the Client
+Navigate to the client directory in your terminal.
+Install the required dependencies by running npm install.
+Start the client by running npm start.
+The React app will be accessible at http://localhost:3000.
+Step 3: Explore the Phone Catalog
+Open the app in your browser by visiting http://localhost:3000.
+You will see a list of all available phones in the catalog.
+Click on any phone model in the list to view its detailed information, including the name, manufacturer, description, color, price, screen size, processor, RAM, and an image of the device.
+Loading Indicator
+While the app is fetching data from the server, you will see a "Loading..." message to indicate that the data is being retrieved.
 
-Your task consists of creating an app showing our catalog. Follow the steps detailed below to complete the task. **You have 3 hours to do so.**
+API Endpoints
+The server provides the following API endpoints:
 
-### Iteration #1
+/phones - GET request to fetch all phones from the phones.json file as fake data.
+/phones/:id - GET request to fetch details of a specific phone by its ID.
+Eye-Appealing Design
+The app's design is kept simple yet eye-appealing. Each phone model is accompanied by an image to enhance the user experience and provide a visual representation of the devices.
 
-Create a REST API (NodeJS) server that meets the following requirements:
+Deadline
+The challenge is designed to be completed within 3 hours. However, you can submit a pull request at any point, even if all the MVP objectives are not fully completed. We understand that this is a speed challenge, and we value your efforts and creativity.
+
+Remember, the main purpose of this challenge is to showcase your coding skills, ability to set up a server and a React app, and how you handle time constraints. Focus on delivering a functional and presentable solution.
+
+We wish you the best of luck, and we look forward to seeing what you create! If you have any questions or need assistance, feel free to reach out. Happy coding!
+
+How to Run the App
+Server
+Navigate to the server directory in your terminal.
+Run npm install to install the required dependencies.
+Start the server by running npm start.
+The server will be running on http://localhost:5000.
+Client
+Navigate to the client directory in your terminal.
+Run npm install to install the required dependencies.
+Start the client by running npm start.
+The React app will be accessible at http://localhost:3000.
 
 
-| Route                 | HTTP Verb | Description    |
-| --------------------- | --------- | -------------- |
-| `/phones`             | GET       | Show all phones (use the `phones.json`) as fake data |
-| `/phones/:id`         | GET       | Show a phone details|
 
 
-### Iteration #2
-
-Create a React application that communicates with the API you created before. Your React app should be using the **hooks** approach.
-- Use Axios (or a similar library) in order to obtain data from the REST API
-- Show a list with all the phones
-- When a phone model is selected from the list, a detailed view of the phone is shown with a few specific details displayed. This display should be on the same page than the list of phones. 
-- Show a spinner component or a position marker while the API request is processing (display a simulation if there is no loading time)
-
-### Iteration #3
-
-Make it look **eye-appealing**. There is no need to develop a sophisticated design, but it should not look terrible when viewed from a phone. Add images of each device.
-
-Once done with this, do a pull request to submit your work. 
-
-
-## Deadline
-
-You have three hours to work on this challenge.
-In the event that after three hours you do not have the MVP objectives ready, send the pull request indistinctly. This is a speed challenge.
-
-## Must-have Deliverables
-
-- Functioning code (server and client side)
-- Short README file describing what is the app about and add instructions on how to use it.
- 
